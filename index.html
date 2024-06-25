@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-/k6QjF97WPntAPy2F7wtyCMxRmV+ulYrZrbL2CdfiL9u6gZQwImtxPp0gVC+5Mlz/K5O/YcoR3r2GjoZBKQCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-logo">
+            <h2>Weather</h2>
+
+            <!--This is the search box
+            -->
+            <div class="enter_box">
+                <i class="fas fa-cloud"></i>
+                <input type="text" id="name" placeholder="Enter your location here">
+                <button onclick="addloc()" id="but"><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- This is for the invalid search -->
+            <div class="invalid">
+                <h5 class="invalid_search">This search is invalid</h5>
+                <i class="icon_error"><i class="fas fa-circle-exclamation"></i></i>
+            </div>
+
+            <!--This is the weather info (temp place)-->
+            <div class="weather">
+                <i class="icon_weather"></i>
+                <h1 class="temp"></h1> 
+                <h3 class="city"></h3>
+                
+                <!--This is for more info humidity and wind-->
+                <div class="info">
+
+                    <!--This is humdity-->
+                    <div class="column">
+                        <i class="hum"><i class="fas fa-droplet"></i></i>
+                        <div>
+                            <p class="humidity"></p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+
+                    <!--This is for wind-->
+                    <div class="column">
+                        <i class="wis"><i class="fas fa-wind"></i></i>
+                        <div>
+                            <p class="wind"></p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <i class="fl"><i class="fa-solid fa-temperature-high"></i></i>
+                        <div>
+                            <p class="feels_like"></p>
+                            <p>Feels Like</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html> 
